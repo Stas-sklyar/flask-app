@@ -1,0 +1,13 @@
+<!-- templates/code_input.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<form>
+  <div class="controls">
+    <button formmethod="post" formaction="{{ url_for('code') }}">
+      Code to Img
+    </button>
+  </div>
+</form>
+{% endblock content %}
